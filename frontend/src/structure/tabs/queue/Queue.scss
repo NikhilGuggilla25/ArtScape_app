@@ -1,0 +1,23 @@
+@use "../../../_colors.scss" as *;
+
+.preview-bar-container{
+    //animation: pulse-queue-preview 1s infinite;
+    //animation-direction: alternate;
+    background-color: $black;
+}
+
+.preview-bar-image{
+    width:40px;
+    max-width: 40px;
+    position: relative;
+    border: 1px solid $primary;
+}
+
+@keyframes pulse-queue-preview {
+    0% {
+        opacity: 70%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

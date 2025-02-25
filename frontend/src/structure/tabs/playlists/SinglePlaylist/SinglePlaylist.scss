@@ -1,0 +1,61 @@
+@use '../../../../_colors.scss' as *;
+
+.editable-title{
+    color: $light;
+}
+.editable-title:focus{
+    background-color: $light;
+    color: $dark;
+}
+
+.btn-cross{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: $dark;
+    color: $primary;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.1s linear, opacity 0.1s linear;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 5px;
+    border: 1px solid $primary;
+    cursor: pointer;
+    pointer-events: all;
+}
+.show-cross{
+    pointer-events: none;
+}
+
+.show{
+    opacity: 1;
+    visibility: visible !important;
+}
+
+.control-card{
+    background-color: black;
+    height:100%;
+    color: $light;
+    font-weight: 700;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    transition: font-size pulse 2s infinite;
+}
+
+.playlist-control-create{
+    border: 1px $light solid;
+    transition: 0.15s;
+}
+
+.playlist-control-create:hover{
+    background-color: $primary;
+}
+
+.icon-large{
+    font-size: 2rem;
+}
