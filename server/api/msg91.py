@@ -16,7 +16,7 @@ def send_otp():
         "otp_expiry": "5",  # Set OTP expiry time if needed
         "template_id": "",  # Add your template ID if needed
         "mobile": mobile_number,
-        "authkey": "429155AJNIWbNG2766d59ea0P1",  # Use the auth key from app config
+        "authkey": "430114A4dqES13o67c16d91P1",  # Use the auth key from app config
         "realTimeResponse": "true"
     })
 

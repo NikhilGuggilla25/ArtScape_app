@@ -114,7 +114,7 @@ const defaultSettings = {
 		offset_angle_1: {
 			name: "device.offset_angle_1",
 			type: "input",
-			value: -1.5,
+			value: 1.5,
 			label: "Insert angular position homing offset",
 			depends_on: "device.type",
 			depends_values: [
@@ -126,7 +126,7 @@ const defaultSettings = {
 		offset_angle_2: {
 			name: "device.offset_angle_2",
 			type: "input",
-			value: 1.5,
+			value: 3,
 			label: "Insert second arm homing position offset",
 			depends_on: "device.type",
 			depends_values: [
