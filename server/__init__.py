@@ -48,7 +48,7 @@ w_logger.propagate = False
 
 # app setup
 # is using the frontend build forlder for the static path
-app = Flask(__name__, template_folder='templates', static_folder="../frontend/build", static_url_path="/")
+app = Flask(__name__, template_folder='templates', static_folder="../frontend/dist", static_url_path="/")
 
 app.logger.setLevel(1)
 w_logger.addHandler(server_stream_handler)

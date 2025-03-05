@@ -24,10 +24,10 @@ function checkArray(arr){
 // get the url of given images
 function getImgUrl(id){
     if (id !== undefined)
-        return domain + "/Drawings/" + id + "?v=" + process.env.REACT_APP_VERSION;  // adding version to automatically reload the images when a new version of the sofware is installed
+        return domain + "/Drawings/" + id + "?v=" + process.env.VITE_APP_VERSION;  // adding version to automatically reload the images when a new version of the sofware is installed
     else return "";
 }
 
-const home_site = "https://github.com/texx00/sandypi";
+const home_site = "https://github.com/NikhilGuggilla25/ArtScape_app";
 
 export { domain, getImgUrl, checkArray, home_site };

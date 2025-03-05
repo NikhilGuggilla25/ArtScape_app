@@ -19,7 +19,7 @@ lines = [
     "/* THIS FILE IS GENERATED WITH THE FOLLOWING UTIL: */\n",
     "/* dev_tools/update_frontend_version.py*/\n",
     "/* Have a look there if you need to put additional variables */\n\n",
-    f"REACT_APP_VERSION = {shash}"]               # start the server
+    f"VITE_APP_VERSION = {shash}"]               # start the server
 
 
 with open(frontend_file_path, "w") as f:

@@ -6,10 +6,11 @@
 FROM node:22.14.0 AS step1
 
 COPY frontend/yarn.lock frontend/package.json ./
-RUN yarn install --network-timeout=100000
+RUN yarn --network-timeout=100000
 
 COPY frontend/public /public
 COPY frontend/src /src
+COPY frontend/index.html ./
 COPY frontend/.env ./
 RUN yarn build
 
@@ -54,7 +55,7 @@ COPY server server
 COPY docker/placeholder.jpg server/static/Drawings/placeholder.jpg
 
 # copying frontend files into python image
-COPY --from=step1 build frontend/build
+COPY --from=step1 build frontend/dist
 
 COPY git_shash.json git_shash.json
 
